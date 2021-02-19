@@ -22,10 +22,11 @@ class OffersAssigner:
         self.candidates['points'] = self.candidates['points'].map(convert_comma_float_to_float)
         if self.convert_points_to_float():
             self.candidates = self.candidates.drop(self.candidates[self.candidates['points'] > 85].index)
-            self.candidates = self.candidates.sort_values(by=['points'], ascending=False, ignore_index=True)
+            self.candidates = self.candidates.sort_values(by=['points'], ascending=False)
+            self.candidates['assigned offer'] = ""
 
     def write_to_file(self):
-        self.candidates.to_excel(self.results_file)
+        self.candidates.to_excel(self.results_file, index=False)
 
     def assign_offers(self):
 
