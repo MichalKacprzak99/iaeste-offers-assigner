@@ -17,16 +17,16 @@ This program is designed to automate this task.
 Assume that we have an Excel file with candidates which looks like this:
 
 <a href="https://ibb.co/K5LZYGs">
-<img src="https://i.ibb.co/cyC5Pv8/candidates.png" alt="candidates" border="0">
+<img src="https://i.ibb.co/cyC5Pv8/candidates.png" alt="candidates">
 </a>
 
 After running program the **`results.ods`** file will be created and will looks like:
 
 <a href="https://ibb.co/ZT8b8dW">
-<img src="https://i.ibb.co/NYjGjxZ/results.png" alt="results" border="0">
+<img src="https://i.ibb.co/NYjGjxZ/results.png" alt="results">
 </a>
 
-Candidates are sorted by their point and if possible, 
+Candidates with correct data(in this case with points lower or equal 85) are sorted by their points and if possible, 
 each candidate is assigned to an offer.
 
 ## Further development
